@@ -16,6 +16,7 @@
 //   return newArray;
 // }
 // JS 6
+
 const array = [5,7,3,88,33,44];
 let max = prompt("inserisci un numero da 1 a "+array.length);
 while (max>array.length) max=prompt("Error length : il numero deve essere compreso tra 1 e " + array.length);
@@ -37,5 +38,5 @@ const cutArgoments= (array,min,max) => {
     return newArray;
 
   }
-
-console.log(cutArgoments(array,min,max));
+let result=document.getElementById("result");
+result.innerHTML+= cutArgoments(array,min,max);
