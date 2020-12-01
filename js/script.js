@@ -38,5 +38,8 @@ const cutArgoments= (array,min,max) => {
     return newArray;
 
   }
+  
+let old=document.getElementById("old");
 let result=document.getElementById("result");
 result.innerHTML+= cutArgoments(array,min,max);
+old.innerHTML+=array;
